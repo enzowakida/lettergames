@@ -1,39 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mmm</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <aside>
-        <div class="logo">
-            <h1>lettergames</h1>
+      <div class="logo">
+        <img src="img/Gamepad2.png" alt="logo" />
+        <h1>lettergames<span>.</span></h1>
+      </div>
+
+      <div class="explorar">
+        <small>EXPLORAR</small>
+      </div>
+
+      <ul>
+        <li>
+          <a aria-current="inicio" href="index.html"
+            ><img src="img/inicio.png" alt="s" />Início</a
+          >
+        </li>
+        <li>
+          <a href="pages/jogar.html"
+            ><img src="img/jogos.png" alt="s" />Jogos</a
+          >
+        </li>
+        <li>
+          <a href="sobre.html"
+            ><img src="img/categorias.png" alt="s" />Categorias</a
+          >
+        </li>
+        <li>
+          <a href="fav.html"
+            ><img src="img/favoritos.png" alt="s" />Favoritos</a
+          >
+        </li>
+        <li>
+          <a href="contato.html"><img src="img/perfil.png" alt="s" />Perfil</a>
+        </li>
+      </ul>
+
+      <div class="rodape">
+        <div class="slogan">
+          <img src="img/Gamepad2.png" alt="logorodape" />
+          <p>
+            <span>O próximo jogo.</span><br />
+            <strong>A próxima aventura.</strong>
+          </p>
         </div>
-
-        <ul>
-            <li><a aria-current="inicio" href="index.html">Início</a></li>
-            <li><a href="pages/jogar.html">Jogos</a></li>
-            <li><a href="sobre.html">Categorias</a></li>
-            <li><a href="fav.html">Favoritos</a></li>  
-            <li><a href="contato.html">Perfil</a></li>
-
-        </ul>
-
-        <footer>
-            <p>
-                <img src="" alt="">
-                <span>O próximo jogo</span>
-                <span>A próxima aventura</span>
-            </p>
+        <small>LETTERGAMES © 2026</small>
+      </div>
     </aside>
 
     <section>
+      <!-- TOPO -->
+      <header class="topo">
+        <nav class="breadcrumb">
+          <span>Explorar</span>
+          <span class="barra">/</span>
+          <strong>Início</strong>
+        </nav>
 
+        <div class="topo-direita">
+          <label class="busca">
+            <i data-lucide="search"></i>
+            <input type="search" placeholder="Buscar um jogo..." />
+            <i data-lucide="search" class="busca-fim"></i>
+          </label>
+
+          <a href="#" class="perfil">
+            <span class="avatar">CL<i class="online"></i></span>
+            <span class="perfil-texto">
+              <strong>Cauã Lima</strong>
+              <small>Explorador</small>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <main class="conteudo">
+        <!-- TÍTULO -->
+        <div class="intro">
+          <div>
+            <p class="eyebrow"><i class="ponto"></i>SEU PRÓXIMO UNIVERSO</p>
+            <h1>Qual vai ser a próxima aventura?</h1>
+            <p class="intro-sub">
+              Descubra jogos que merecem um lugar na sua lista.
+            </p>
+          </div>
+          <p class="feito">
+            <i data-lucide="sparkles"></i>Feito para quem joga.
+          </p>
+        </div>
+
+        <!-- DESTAQUE -->
+        <div class="hero">
+          <div class="hero-texto">
+            <span class="selo"><i data-lucide="zap"></i>JOGO EM DESTAQUE</span>
+            <p class="hero-meta">
+              RPG · Mundo aberto <i class="bolinha"></i> FromSoftware
+            </p>
+            <h2>Elden Ring</h2>
+            <p class="hero-desc">
+              As Terras Intermédias esperam por você. Explore um mundo vasto,
+              enfrente criaturas lendárias e escreva sua própria jornada.
+            </p>
+            <div class="hero-botoes">
+              <a href="#" class="btn-verde"
+                >Ver jogo <i data-lucide="arrow-up-right"></i
+              ></a>
+              <button class="btn-icone"><i data-lucide="heart"></i></button>
+            </div>
+          </div>
+
+          <div class="hero-dots">
+            <span class="dot ativo"></span><span class="dot"></span
+            ><span class="dot"></span>
+          </div>
+          <div class="hero-setas">
+            <button class="seta"><i data-lucide="chevron-left"></i></button>
+            <button class="seta"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- POPULARES -->
+        <div class="bloco-titulo">
+          <h2>
+            <i data-lucide="zap"></i>Populares agora
+            <span class="tag">EM ALTA</span>
+          </h2>
+          <a href="#" class="link-ver"
+            >Ver todos <i data-lucide="arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="grade">
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/92dea312-df6a-4663-a1fa-e77cd7c3b7db/gta-v.png"
+                alt="Capa de Grand Theft Auto V"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Grand Theft Auto V</h3>
+            <p>Ação · Mundo aberto</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/e9fcd0fe-68a2-4de9-a7a0-9666167e7bfd/cyberpunk.jpg"
+                alt="Capa de Cyberpunk 2077"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Cyberpunk 2077</h3>
+            <p>RPG · Ficção científica</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/371729e3-c652-489a-8563-7cbc0c0e0743/forza.jpg"
+                alt="Capa de Forza Horizon 5"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Forza Horizon 5</h3>
+            <p>Corrida · Mundo aberto</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/951cc8cc-5147-470b-b882-e583f859fa66/resident-evil.jpg"
+                alt="Capa de Resident Evil 4"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Resident Evil 4</h3>
+            <p>Terror · Sobrevivência</p>
+          </article>
+        </div>
+
+        <!-- NOVOS LANÇAMENTOS -->
+        <div class="bloco-titulo">
+          <h2><i data-lucide="sparkles"></i>Novos lançamentos</h2>
+          <span class="sub-direita">Novidades e próximos jogos</span>
+        </div>
+
+        <div class="lancamentos">
+          <a href="#" class="lancamento">
+            <img
+              src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/5028e7f0-76c1-4a28-9454-91f1fb91b82a/wolverine.png"
+              alt="Arte de Marvel's Wolverine"
+            />
+            <div class="lanc-texto">
+              <small class="verde">NO RADAR</small>
+              <h3>Marvel’s Wolverine</h3>
+              <p>Ação · Aventura</p>
+              <span class="conhecer"
+                >Conhecer o jogo <i data-lucide="arrow-up-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a href="#" class="lancamento">
+            <img
+              src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/b5e01f7b-30eb-4cbb-965b-77600721bc43/fc27.png"
+              alt="Arte de EA Sports FC 27"
+            />
+            <div class="lanc-texto">
+              <small class="verde">ARTE CONCEITUAL</small>
+              <h3>EA Sports FC 27</h3>
+              <p>Esportes · Futebol</p>
+              <span class="conhecer"
+                >Conhecer o jogo <i data-lucide="arrow-up-right"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- RECOMENDADOS -->
+        <div class="bloco-titulo">
+          <h2><i data-lucide="compass"></i>Recomendados para você</h2>
+        </div>
+
+        <div class="filtros">
+          <button class="ativo">Todos</button>
+          <button>Ação</button>
+          <button>RPG</button>
+          <button>Esportes</button>
+          <button>Corrida</button>
+          <button>Terror</button>
+          <button>Estratégia</button>
+          <button>Aventura</button>
+          <button>Multiplayer</button>
+        </div>
+
+        <div class="grade">
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/b8a019bc-e294-41f8-b788-d9be508461a2/elden-ring.png"
+                alt="Capa de Elden Ring"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Elden Ring</h3>
+            <p>RPG · Mundo aberto</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/92dea312-df6a-4663-a1fa-e77cd7c3b7db/gta-v.png"
+                alt="Capa de Grand Theft Auto V"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Grand Theft Auto V</h3>
+            <p>Ação · Mundo aberto</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/e9fcd0fe-68a2-4de9-a7a0-9666167e7bfd/cyberpunk.jpg"
+                alt="Capa de Cyberpunk 2077"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Cyberpunk 2077</h3>
+            <p>RPG · Ficção científica</p>
+          </article>
+
+          <article class="jogo">
+            <div class="capa">
+              <img
+                src="https://letter-lounge-hub.lovable.app/__l5e/assets-v1/371729e3-c652-489a-8563-7cbc0c0e0743/forza.jpg"
+                alt="Capa de Forza Horizon 5"
+              />
+              <button class="fav"><i data-lucide="heart"></i></button>
+            </div>
+            <h3>Forza Horizon 5</h3>
+            <p>Corrida · Mundo aberto</p>
+          </article>
+        </div>
+
+        <!-- CATEGORIAS -->
+        <div class="bloco-titulo">
+          <h2>Encontre seu estilo</h2>
+          <a href="#" class="link-ver"
+            >Todas as categorias <i data-lucide="arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="categorias">
+          <a href="#"
+            ><i data-lucide="swords"></i><span>Ação</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="castle"></i><span>RPG</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="trophy"></i><span>Esportes</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="flag"></i><span>Corrida</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="ghost"></i><span>Terror</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="shield"></i><span>Estratégia</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="mountain"></i><span>Aventura</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+          <a href="#"
+            ><i data-lucide="users"></i><span>Multiplayer</span
+            ><i data-lucide="arrow-up-right" class="seta-cat"></i
+          ></a>
+        </div>
+      </main>
+
+      <!-- RODAPÉ -->
+      <footer class="rodape-site">
+        <strong>lettergames.</strong>
+        <p>Novos mundos. Grandes histórias. Seu próximo jogo.</p>
+        <small>UM PROJETO FEITO POR CAUÃ LIMA</small>
+      </footer>
     </section>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
