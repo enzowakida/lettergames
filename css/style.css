@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .logo {
@@ -689,6 +690,7 @@ section a {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--borda);
+    font-family: "Space Grotesk", sans-serif;
 }
  
 .rodape-site strong {
