@@ -29,7 +29,7 @@
 }
 
 aside {
-    width: 13vw;
+    width: 15vw;
     height: 100dvh;
     background-color: #0D0E11;
     position: fixed;
@@ -130,9 +130,9 @@ ul a:hover {
 }
  
 section {
-    width: 87vw;
+    width: 85vw;
     height: 100dvh;
-    margin-left: 13vw;
+    margin-left: 15vw;
     overflow-y: scroll;
     background-color: var(--fundo);
     color: var(--texto);
